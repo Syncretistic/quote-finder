@@ -1,0 +1,11 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    link(rel='stylesheet' type='text/css' href='/css/style.css')
+    title Trova Quote
+#container
+    h1 Trova quote
+    form(action='/search-match' method='post')
+        label Cerca partita
+        input#search_string(type='text' name='search_string')
+        button(type='submit') Cerca

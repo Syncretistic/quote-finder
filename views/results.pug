@@ -1,0 +1,15 @@
+html
+    head
+        title= title
+    body
+        h1 Results for #{ search_string }
+        ul
+            each site in results
+                li
+                    h2= site.name
+                    h3 Live
+                    each match in site.live
+                        p= match.Event
+                    h3 Pre
+                    each match in site.pre
+                        p= match.Event
